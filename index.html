@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+    <script src="init-firebase.js" defer></script>
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <!-- logo div -->
+        <div class="logo"><img src="images/High Resolution Logo.png"></div>
+        <!-- NAVIGATION MENU -->
+        <ul class="nav-links">
+          <input type="checkbox" id="checkbox_toggle" />
+          <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+          <div class="menu">
+            <ul><a href="/">Home</a></ul>
+            <ul><a href="/sign-up-page.html">Sign Up</a></ul>
+          </div>
+        </ul>
+    </nav>
+    <div class="form-container" id="login-form">
+        <form>
+            <p>Email:</p>
+            <input id="login-email" type="email" placeholder="example@email.com" />
+            <p>Password:</p>
+            <input id="login-password" type="password" placeholder="Password" />
+            <button type="submit" id="login-btn">Log In</button>
+        </form>
+    </div>
+    <div class="main-feed">
+        
+    </div>
+</body>
+</html>

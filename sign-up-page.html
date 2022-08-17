@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+    <script src="init-firebase.js" defer></script>
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <!-- logo div -->
+        <div class="logo"><img src="images/High Resolution Logo.png"></div>
+        <!-- NAVIGATION MENU -->
+        <ul class="nav-links">
+          <input type="checkbox" id="checkbox_toggle" />
+          <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+          <div class="menu">
+            <ul><a href="/">Home</a></ul>
+            <ul><a href="/sign-up-page.html">Sign Up</a></ul>
+          </div>
+        </ul>
+    </nav>
+    <div class="form-container" id="signup-form">
+        <form>
+            <p>Email:</p>
+            <input type="email" id="sign-up-email" placeholder="example@email.com">
+            <p>Username:</p>
+            <input type="username" id="sign-up-username" placeholder="username">
+            <p>Phone Number:</p>
+            <input type="tel" id="sign-up-phone-number" placeholder="+1 123-456-7890">
+            <p>First Name:</p>
+            <input type="text" id="sign-up-first-name" placeholder="John">
+            <p>Last Name:</p>
+            <input type="text" id="sign-up-last-name" placeholder="Doe">
+            <p>Password:</p>
+            <input type="password" id="sign-up-password" placeholder="Password">
+            <p>Passoword Confirm:</p>
+            <input type="password" id="sign-up-password-confirm" placeholder="Confirm Password">
+            <button type="submit" id="signup-btn">Sign Up</button>
+        </form>
+    </div>
+</body>
+</html>
