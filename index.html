@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Home</title>
     <link rel="stylesheet" href="style.css">
     <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
     <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
@@ -19,7 +19,7 @@
         <ul class="nav-links">
           <input type="checkbox" id="checkbox_toggle" />
           <label for="checkbox_toggle" class="hamburger">&#9776;</label>
-          <div class="menu">
+          <div class="menu" id="home-menu">
             <ul><a href="/">Home</a></ul>
             <ul><a href="/sign-up-page.html">Sign Up</a></ul>
           </div>
@@ -34,8 +34,53 @@
             <button type="submit" id="login-btn">Log In</button>
         </form>
     </div>
-    <div class="main-feed">
-        
+    <!-- NOTE: temporary data -->
+    <div id="feed-container">
+        <div id="main-feed">
+            <div id="post-report">
+                <h2><a href="found-a-pet.html">Found A Pet</a></h2>
+                <h2><a href="lost-a-pet.html">Lost A Pet</a></h2>
+            </div>
+            <div class="card">
+                <img src="https://www.europuppy.com/wp-content/uploads/2020/01/xIMG_9625-1.jpg.pagespeed.ic.aB3wA1tr1a.jpg" alt="cute dog">
+                <div class="container">
+                    <h4>User: John Doe</h4>
+                    <h5>Found a Dog</h5>
+                    <p>Breed:</p>
+                    <p id="dog-breed"></p>
+                    <p>Dog Color:</p>
+                    <p id="dog-color"></p>
+                    <p>Dog Name: Andy</p>
+                    <p id="dog-name"></p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://kb.rspca.org.au/wp-content/uploads/2018/11/golder-retriever-puppy.jpeg" alt="cute dog">
+                <div class="container">
+                    <h4>User: Jane Doe</h4>
+                    <h5>Lost a Dog</h5>
+                    <p>Breed:</p>
+                    <p id="dog-breed"></p>
+                    <p>Dog Color:</p>
+                    <p id="dog-color"></p>
+                    <p>Dog Name: Neev</p>
+                    <p id="dog-name"></p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://www.akc.org/wp-content/themes/akc/component-library/assets/img/welcome.jpg" alt="cute dog">
+                <div class="container">
+                    <h4>User: John Doe</h4>
+                    <h5>Lost a Dog </h5>
+                    <p>Breed:</p>
+                    <p id="dog-breed"></p>
+                    <p>Dog Color:</p>
+                    <p id="dog-color"></p>
+                    <p>Dog Name: Joshua</p>
+                    <p id="dog-name"></p>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>

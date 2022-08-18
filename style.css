@@ -37,6 +37,7 @@ li {
 
 .logo img {
     width: 70px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
 .menu {
@@ -125,4 +126,50 @@ input[type=checkbox]{
 
 .form-container input {
     padding: 10px;
+}
+
+/* main feed code */
+
+#post-report {
+    display: flex;
+}
+
+#post-report h2 a{
+    text-decoration: none;
+    color: black;
+    margin: 20px;
+    transition: 0.2s ease;
+}
+
+#post-report a:hover{
+    color: var(--yellow);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+#feed-container {
+    display: none;
+}
+
+#main-feed {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    background-color: var(--yellow);
+    width: 60%;
+    max-width: 600px;
+
+    margin: 10px;
+}
+
+.card img {
+    align-items: center;
+    width: 50%;
+    margin: 15px;
 }
