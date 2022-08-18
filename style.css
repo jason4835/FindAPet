@@ -165,23 +165,28 @@ input[type=checkbox]{
     background-color: var(--yellow);
     width: 60%;
     max-width: 600px;
+    height: 60%;
+    max-height: 600px;
     margin: 10px;
+}
+
+.card .container{
+    margin-left: 20px;
 }
 
 .card img {
     align-items: center;
     width: 40%;
     height: 40%;
-    margin: 15px 40%;
+    margin: 15px 15%;
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-}
 
 .select {
     padding: 10px;
+}
+
+.heading {
+    text-decoration: underline;
+    font-weight: bold;
 }
