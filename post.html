@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+    <script src="init-firebase.js" defer></script>
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <!-- logo div -->
+        <div class="logo"><img src="images/High Resolution Logo.png"></div>
+        <!-- NAVIGATION MENU -->
+        <ul class="nav-links">
+          <input type="checkbox" id="checkbox_toggle" />
+          <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+          <div class="menu">
+            <ul><a href="/">Home</a></ul>
+            <ul><a href="/sign-up-page.html">Sign Up</a></ul>
+          </div>
+        </ul>
+    </nav>
+    <div class="form-container">
+        <form>
+            <p>Report Type:</p>
+            <select class="select">
+                <option value="select-post-type">Select Post Type</option>
+                <option value="found-a-pet">Found A Pet</option>
+                <option value="lost-a-pet">Lost A Pet</option>
+            </select>
+            <p>Type of Pet:</p>
+            <select class="select">
+                <option value="type-of-pet">Select Pet Type</option>
+                <option value="dog">Dog</option>
+                <option value="cat">Cat</option>
+            </select>
+            <p>Pet Name:</p>
+            <input type="text">
+            <p>Pet Color(s):</p>
+            <input type="text">
+            <p>Pet Breed:</p>
+            <input type="text">
+            <p>Image of Pet</p>
+            <input type="file" id="file">
+            <label for="file"></label>
+            <button>Post</button>
+        </form>
+    </div>
+</body>
+</html>

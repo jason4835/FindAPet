@@ -1,4 +1,4 @@
-const database = firebase.database().ref();
+const database = firebase.database();
 
 //test
 let email = "test@gmail.com";
@@ -63,7 +63,7 @@ const updateDB = (event) => {
     console.log(data);
 
     //sends to database
-    database.push(data);
+    database.ref().push(data);
 };
 
 signUpBtn.onclick = checkPassword;
